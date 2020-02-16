@@ -9,6 +9,6 @@
 * Python
 * Django/Flask
 ## Database
-* MySQL
+* PostgreSQL
 ## DevOps
 * Docker
