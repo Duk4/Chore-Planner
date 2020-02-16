@@ -6,8 +6,8 @@
 * Angular
 * SASS
 ## Backend
-* PHP
-* Laravel
+* Python
+* Django/Flask
 ## Database
 * MySQL
 ## DevOps
