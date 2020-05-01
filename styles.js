@@ -2,14 +2,14 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     header: {
-        backgroundColor: '#0D2740',
-        height: 60,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: '#0c2259',
+        height: 70,
         paddingTop: 30,
-        paddingHorizontal: 10
-    },
-    headerText: {
-        color: '#FFFFFF',
-        fontWeight: 'bold',
+        paddingBottom: 10,
+        paddingHorizontal: 30
     },
     home: {
         flex: 1,
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
     homeBox: {
-        padding: 35,
+        padding: 30,
         marginTop: 15,
         marginHorizontal: 20,
         fontSize: 24,
@@ -32,17 +32,17 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     homeText: {
-        color: '#494c4e',
+        color: '#2c2d2e',
         fontSize: 24,
         fontWeight: 'bold',
-        marginLeft: 35,
+        marginLeft: 30,
     },
     plusBox: {
-        marginTop: 25,
+        marginTop: 30,
         alignItems: "center",
     },
 });
 
 export default styles;
 
-  // #0D2740 #3AAED6
+  // #0D2740 #3AAED6 #0c2259 #bde9f8 #2c2d2e
