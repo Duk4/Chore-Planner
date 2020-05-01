@@ -1,6 +1,6 @@
 # Chore-Planner
 
-## Packages
+### Packages
 * Expo CLI
 * React Native
 * React Navigator
