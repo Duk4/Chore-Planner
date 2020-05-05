@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import { AntDesign, MaterialCommunityIcons, FontAwesome } from '@expo/vector-icons';
-import styles from '../styles.js';
+import { styles } from '../assets/styles.js';
 
 export default function Home() {
     return (

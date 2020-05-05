@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
-import styles from '../styles.js';
+import { View, Image } from 'react-native';
+import { styles } from '../assets/styles.js';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function Header() {

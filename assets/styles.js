@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -16,16 +16,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
     choiceContainer: {
-        flex: 1,
         backgroundColor: '#fff',
     },
     homeBox: {
         padding: 30,
-        marginTop: 15,
+        marginTop: 20,
         marginHorizontal: 20,
-        fontSize: 24,
-        fontWeight: 'bold',
-        flexGrow: 1,
         flexDirection: 'row',
         backgroundColor: '#bde9f8',
         borderRadius: 20,
@@ -42,7 +38,5 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
 });
-
-export default styles;
 
   // #0D2740 #3AAED6 #0c2259 #bde9f8 #2c2d2e
