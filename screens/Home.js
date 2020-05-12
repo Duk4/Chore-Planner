@@ -29,9 +29,11 @@ export default function Home({ navigation }) {
                     })
                 }
             </View>
-            <View style={styles.plusBox}>
-                <AntDesign name='pluscircle' size={48} color='#E2474B' />
-            </View>
+            <TouchableOpacity onPress={}>
+                <View style={styles.plusBox}>
+                    <AntDesign name='pluscircle' size={48} color='#E2474B' />
+                </View>
+            </TouchableOpacity>
         </View>
     );
 };
