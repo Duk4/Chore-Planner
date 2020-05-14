@@ -29,7 +29,7 @@ export default function Home({ navigation }) {
                     })
                 }
             </View>
-            <TouchableOpacity onPress={}>
+            <TouchableOpacity>
                 <View style={styles.plusBox}>
                     <AntDesign name='pluscircle' size={48} color='#E2474B' />
                 </View>
