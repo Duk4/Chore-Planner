@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
 import { styles } from '../assets/styles.js';
 import HomeItem from '../components/HomeItem';
+import PlusButton from '../components/PlusButton';
 
 const items = [
     { screen: 'Planner', name: 'balance-scale', text: 'Week Planner' },
@@ -29,11 +29,7 @@ export default function Home({ navigation }) {
                     })
                 }
             </View>
-            <TouchableOpacity>
-                <View style={styles.plusBox}>
-                    <AntDesign name='pluscircle' size={48} color='#E2474B' />
-                </View>
-            </TouchableOpacity>
+            <PlusButton />
         </View>
     );
 };

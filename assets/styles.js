@@ -13,9 +13,9 @@ export const styles = StyleSheet.create({
     },
     home: {
         flex: 1,
-        backgroundColor: '#fff',
     },
     choiceContainer: {
+        flex: 1,
         backgroundColor: '#fff',
     },
     homeBox: {
@@ -34,9 +34,23 @@ export const styles = StyleSheet.create({
         marginLeft: 30,
     },
     plusBox: {
-        marginTop: 30,
-        alignItems: "center",
+        position: 'absolute',
+        bottom: 50,
+        alignSelf: "center"
     },
+    noLists: {
+        flex: 1,
+        backgroundColor: '#fff',
+        paddingTop: 250,
+        textAlign: 'center',
+    },
+    noListsText: {
+        fontSize: 18,
+        fontWeight: 'bold'
+    },
+    lists: {
+        flex: 1,
+    }
 });
 
   // #0D2740 #3AAED6 #0c2259 #bde9f8 #2c2d2e
