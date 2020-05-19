@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import { styles } from '../assets/styles';
-import { MaterialIcons } from '@expo/vector-icons';
 import ListItemButton from './ListItemButton';
 
 const ListItem = ({ list }) => {
