@@ -50,7 +50,35 @@ export const styles = StyleSheet.create({
     },
     lists: {
         flex: 1,
+    },
+    listsContainer: {
+        flex: 1,
+        backgroundColor: '#fff',
+        paddingTop: 5
+    },
+    listItem: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginHorizontal: '5%',
+        marginVertical: 5,
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        borderRadius: 10,
+        backgroundColor: '#bde9f8'
+    },
+    listItemText: {
+        fontWeight: 'bold',
+        color: '#2c2d2e'
+    },
+    listItemButtons: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    listItemButtonsMargin: {
+        marginLeft: 5
     }
 });
 
-  // #0D2740 #3AAED6 #0c2259 #bde9f8 #2c2d2e
+  // #0c2259 #bde9f8 #2c2d2e
