@@ -3,6 +3,7 @@ import { View, TouchableOpacity } from 'react-native';
 import { styles } from '../assets/styles.js';
 import HomeItem from '../components/HomeItem';
 import PlusButton from '../components/PlusButton';
+import navigationHandler from '../utils/navigationHandler';
 
 const items = [
     { screen: 'Planner', name: 'balance-scale', text: 'Week Planner' },
@@ -12,24 +13,20 @@ const items = [
 ];
 
 export default function Home({ navigation }) {
-    const pressHandler = (screen) => {
-        navigation.navigate(screen);
-    };
-
     return (
         <View style={styles.home}>
             <View style={styles.choiceContainer}>
                 {
                     items.map((item, index) => {
                         return (
-                            <TouchableOpacity onPress={() => { pressHandler(item.screen) }}>
+                            <TouchableOpacity onPress={() => { navigationHandler(navigation, item.screen) }}>
                                 <HomeItem screen={item.screen} name={item.name} text={item.text} key={index} />
                             </TouchableOpacity>
                         );
                     })
                 }
             </View>
-            <PlusButton />
+            <PlusButton navigationHandler={() => { navigationHandler(navigation, 'NewItem') }} />
         </View>
     );
 };

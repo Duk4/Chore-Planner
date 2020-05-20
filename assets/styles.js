@@ -77,7 +77,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     listItemButtonsMargin: {
-        marginLeft: 5
+        marginLeft: 10
     }
 });
 

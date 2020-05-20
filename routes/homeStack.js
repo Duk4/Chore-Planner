@@ -5,6 +5,7 @@ import Lists from '../screens/Lists';
 import Planner from '../screens/Planner';
 import ShoppingLists from '../screens/ShoppingLists';
 import ImportantDates from '../screens/ImportantDates';
+import NewItem from '../screens/NewItem';
 
 const screens = {
     Home: {
@@ -21,6 +22,9 @@ const screens = {
     },
     Lists: {
         screen: Lists
+    },
+    NewItem: {
+        screen: NewItem
     }
 };
 

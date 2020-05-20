@@ -6,7 +6,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 const ListItem = ({ name }) => {
     return (
         <TouchableOpacity onPress={() => { console.log(name) }} style={styles.listItemButtonsMargin}>
-            <MaterialIcons name={name} size={16} color="#2c2d2e" />
+            <MaterialIcons name={name} size={20} color="#2c2d2e" />
         </TouchableOpacity>
     );
 };
