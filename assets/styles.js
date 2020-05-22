@@ -63,18 +63,22 @@ export const styles = StyleSheet.create({
         marginHorizontal: '5%',
         marginVertical: 5,
         paddingHorizontal: 20,
-        paddingVertical: 10,
+        paddingVertical: 12,
         borderRadius: 10,
         backgroundColor: '#bde9f8'
     },
+    listItemInfo: {
+        flexDirection: "row",
+        justifyContent: 'flex-start'
+    },
     listItemText: {
         fontWeight: 'bold',
-        color: '#2c2d2e'
+        color: '#2c2d2e',
+        marginLeft: 10,
     },
     listItemButtons: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
+        justifyContent: 'space-between'
     },
     listItemButtonsMargin: {
         marginLeft: 10

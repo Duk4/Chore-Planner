@@ -6,7 +6,8 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const ListItem = ({ list }) => {
     const [check, toggleCheck] = useState(false);
-    let checked;
+
+    let checked = <ListItemButton name="checkbox-blank-outline" />;
 
     if (check === true) {
         checked = <ListItemButton name="check" />;
@@ -15,11 +16,13 @@ const ListItem = ({ list }) => {
     return (
         <TouchableOpacity onPress={() => { toggleCheck(!check) }}>
             <View style={styles.listItem}>
-                <Text style={styles.listItemText}>{list.title}</Text>
-                <View style={styles.listItemButtons}>
+                <View style={styles.listItemInfo}>
                     {checked}
-                    <ListItemButton name="edit" />
-                    <ListItemButton name="delete" />
+                    <Text style={styles.listItemText}>{list.title}</Text>
+                </View>
+                <View style={styles.listItemButtons}>
+                    <ListItemButton name="square-edit-outline" style={styles.listItemButtonsMargin} />
+                    <ListItemButton name="delete" style={styles.listItemButtonsMargin} />
                 </View>
             </View>
         </TouchableOpacity>

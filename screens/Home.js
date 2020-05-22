@@ -19,8 +19,8 @@ export default function Home({ navigation }) {
                 {
                     items.map((item, index) => {
                         return (
-                            <TouchableOpacity onPress={() => { navigationHandler(navigation, item.screen) }}>
-                                <HomeItem screen={item.screen} name={item.name} text={item.text} key={index} />
+                            <TouchableOpacity key={index} onPress={() => { navigationHandler(navigation, item.screen) }}>
+                                <HomeItem screen={item.screen} name={item.name} text={item.text} />
                             </TouchableOpacity>
                         );
                     })
