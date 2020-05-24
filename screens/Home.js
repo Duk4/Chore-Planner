@@ -26,7 +26,7 @@ export default function Home({ navigation }) {
                     })
                 }
             </View>
-            <PlusButton navigationHandler={() => { navigationHandler(navigation, 'NewItem') }} />
+            <PlusButton style={styles.plusBox} navigationHandler={() => { navigationHandler(navigation, 'NewItem') }} />
         </View>
     );
 };

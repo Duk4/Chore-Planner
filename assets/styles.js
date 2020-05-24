@@ -36,7 +36,11 @@ export const styles = StyleSheet.create({
     plusBox: {
         position: 'absolute',
         bottom: 50,
-        alignSelf: "center"
+        alignSelf: "center",
+    },
+    plusBoxTop: {
+        alignSelf: 'center',
+        marginTop: 10
     },
     noLists: {
         flex: 1,
@@ -50,6 +54,7 @@ export const styles = StyleSheet.create({
     },
     lists: {
         flex: 1,
+        backgroundColor: '#fff'
     },
     listsContainer: {
         flex: 1,
