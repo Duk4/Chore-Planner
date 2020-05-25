@@ -4,7 +4,7 @@ import { styles } from '../assets/styles';
 import ListItemButton from './ListItemButton';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
-const ListItem = ({ list }) => {
+const ListItem = ({ list, navigationHandler }) => {
     const [check, toggleCheck] = useState(false);
 
     let checked = <ListItemButton name="checkbox-blank-outline" />;
@@ -14,18 +14,18 @@ const ListItem = ({ list }) => {
     };
 
     return (
-        <TouchableOpacity onPress={() => { toggleCheck(!check) }}>
-            <View style={styles.listItem}>
-                <View style={styles.listItemInfo}>
+        <View style={styles.listItem}>
+            <View style={styles.listItemInfo}>
+                <TouchableOpacity onPress={() => { toggleCheck(!check) }}>
                     {checked}
-                    <Text style={styles.listItemText}>{list.title}</Text>
-                </View>
-                <View style={styles.listItemButtons}>
-                    <ListItemButton name="square-edit-outline" style={styles.listItemButtonsMargin} />
-                    <ListItemButton name="delete" style={styles.listItemButtonsMargin} />
-                </View>
+                </TouchableOpacity>
+                <Text style={styles.listItemText}>{list.title}</Text>
             </View>
-        </TouchableOpacity>
+            <View style={styles.listItemButtons}>
+                <ListItemButton name="square-edit-outline" style={styles.listItemButtonsMargin} navigationHandler={navigationHandler} />
+                <ListItemButton name="delete" style={styles.listItemButtonsMargin} />
+            </View>
+        </View>
     );
 };
 

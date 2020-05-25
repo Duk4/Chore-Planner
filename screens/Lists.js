@@ -94,7 +94,7 @@ export default function Lists({ navigation }) {
     } else {
         render = (
             lists.map((list, index) => {
-                return <ListItem list={list} key={index} />;
+                return <ListItem list={list} key={index} navigationHandler={() => { navigationHandler(navigation, 'EditItem') }} />;
             })
         )
     }
