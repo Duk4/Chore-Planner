@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 
-export default function PlusButton({ navigationHandler, style }) {
+const PlusButton = ({ navigationHandler, style }) => {
     return (
         <TouchableOpacity onPress={() => { navigationHandler() }}>
             <View style={style}>
@@ -11,3 +11,5 @@ export default function PlusButton({ navigationHandler, style }) {
         </TouchableOpacity>
     )
 };
+
+export default PlusButton;

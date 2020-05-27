@@ -87,6 +87,10 @@ export const styles = StyleSheet.create({
     },
     listItemButtonsMargin: {
         marginLeft: 10
+    },
+    dateItemText: {
+        fontWeight: 'bold',
+        color: '#2c2d2e'
     }
 });
 

@@ -12,7 +12,7 @@ const items = [
     { screen: 'Lists', name: 'list-ul', text: 'To do lists' },
 ];
 
-export default function Home({ navigation }) {
+const Home = ({ navigation }) => {
     return (
         <View style={styles.home}>
             <View style={styles.choiceContainer}>
@@ -30,3 +30,5 @@ export default function Home({ navigation }) {
         </View>
     );
 };
+
+export default Home;

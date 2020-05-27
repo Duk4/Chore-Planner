@@ -89,6 +89,7 @@ export default function Lists({ navigation }) {
         render = (
             <View style={styles.noLists}>
                 <Text style={styles.noListsText}>No lists found...</Text>
+                <PlusButton style={styles.plusBox} navigationHandler={() => { navigationHandler(navigation, 'NewItem') }} />
             </View>
         )
     } else {
