@@ -9,7 +9,7 @@ const ImportantDates = ({ navigation }) => {
     const dates = [
         {
             "title": "Milan Tomažič",
-            "type": "lunch",
+            "type": "chilling",
             "date": "2020-05-28",
         },
         {
@@ -24,17 +24,27 @@ const ImportantDates = ({ navigation }) => {
         },
         {
             "title": "I wanna",
-            "type": "date",
+            "type": "romantic",
             "date": "2020-05-12",
         },
         {
             "title": "Buy laptop",
             "type": "business",
             "date": "2020-05-13"
+        },
+        {
+            "title": "Buy meds",
+            "type": "medical",
+            "date": "2020-05-15"
+        },
+        {
+            "title": "Call Sally",
+            "type": "date",
+            "date": "2020-05-31"
         }
     ];
-    let render;
 
+    let render;
     if (dates.length === 0) {
         render = (
             <View style={styles.noLists}>

@@ -88,6 +88,14 @@ export const styles = StyleSheet.create({
     listItemButtonsMargin: {
         marginLeft: 10
     },
+    dateItem: {
+        flexDirection: 'row',
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    dateItemInfo: {
+        paddingLeft: 20
+    },
     dateItemText: {
         fontWeight: 'bold',
         color: '#2c2d2e'
