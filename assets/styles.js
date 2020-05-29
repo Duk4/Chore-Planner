@@ -99,6 +99,27 @@ export const styles = StyleSheet.create({
     dateItemText: {
         fontWeight: 'bold',
         color: '#2c2d2e'
+    },
+    shoppingItemTitle: {
+        fontWeight: 'bold',
+        color: '#2c2d2e',
+        fontSize: 16
+    },
+    shoppingItemInfo: {
+        flexDirection: 'row',
+    },
+    shoppingItemIcons: {
+        justifyContent: "center",
+        alignItems: "center",
+        fontWeight: 'bold',
+        color: '#2c2d2e'
+    },
+    shoppingItemIconsMargin: {
+        justifyContent: "center",
+        alignItems: "center",
+        fontWeight: 'bold',
+        color: '#2c2d2e',
+        marginLeft: 10
     }
 });
 
