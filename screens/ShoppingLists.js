@@ -4,9 +4,10 @@ import { styles } from '../assets/styles.js';
 import ShoppingItem from '../components/ShoppingItem';
 import PlusButton from '../components/PlusButton';
 import navigationHandler from '../utils/navigationHandler';
+import sortByDate from '../utils/sortByDate';
 
 const ShoppingLists = ({ navigation }) => {
-    const shoppingLists = [
+    const shoppingList = [
         {
             "title": "Kamen",
             "amount": "50",
@@ -97,8 +98,10 @@ const ShoppingLists = ({ navigation }) => {
         },
     ];
 
+    const shoppingItems = sortByDate(shoppingList);
+
     let render;
-    if (shoppingLists.length === 0) {
+    if (shoppingItems.length === 0) {
         render = (
             <View style={styles.noLists}>
                 <Text style={styles.noListsText}>No dates found...</Text>
@@ -107,7 +110,7 @@ const ShoppingLists = ({ navigation }) => {
         );
     } else {
         render = (
-            shoppingLists.map((item, index) => {
+            shoppingItems.map((item, index) => {
                 return <ShoppingItem item={item} key={index} navigationHandler={() => { navigationHandler(navigation, 'EditItem') }} />;
             })
         );

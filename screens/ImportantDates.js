@@ -4,6 +4,7 @@ import { styles } from '../assets/styles.js';
 import DatesList from '../components/DatesList';
 import PlusButton from '../components/PlusButton';
 import navigationHandler from '../utils/navigationHandler';
+import sortByDate from '../utils/sortByDate';
 
 const ImportantDates = ({ navigation }) => {
     const dates = [
@@ -44,8 +45,10 @@ const ImportantDates = ({ navigation }) => {
         }
     ];
 
+    const dateItems = sortByDate(dates);
+
     let render;
-    if (dates.length === 0) {
+    if (dateItems.length === 0) {
         render = (
             <View style={styles.noLists}>
                 <Text style={styles.noListsText}>No dates found...</Text>
@@ -54,7 +57,7 @@ const ImportantDates = ({ navigation }) => {
         );
     } else {
         render = (
-            dates.map((date, index) => {
+            dateItems.map((date, index) => {
                 return <DatesList date={date} key={index} navigationHandler={() => { navigationHandler(navigation, 'EditItem') }} />;
             })
         );
